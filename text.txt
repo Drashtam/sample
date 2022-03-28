@@ -1,1 +1,71 @@
-fdbfd
+drashtam@atyantik-090821:~/Documents/workspace/github$ touch text.txt
+drashtam@atyantik-090821:~/Documents/workspace/github$ git status
+fatal: not a git repository (or any of the parent directories): .git
+drashtam@atyantik-090821:~/Documents/workspace/github$ git init
+Initialized empty Git repository in /home/drashtam/Documents/workspace/github/.git/
+drashtam@atyantik-090821:~/Documents/workspace/github$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+drashtam@atyantik-090821:~/Documents/workspace/github$ git branch 
+drashtam@atyantik-090821:~/Documents/workspace/github$ git add .
+drashtam@atyantik-090821:~/Documents/workspace/github$ got status
+
+Command 'got' not found, but there are 17 similar ones.
+
+drashtam@atyantik-090821:~/Documents/workspace/github$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   text.txt
+
+drashtam@atyantik-090821:~/Documents/workspace/github$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   text.txt
+
+drashtam@atyantik-090821:~/Documents/workspace/github$ git commit -m "root"
+[master (root-commit) 6176ac5] root
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+drashtam@atyantik-090821:~/Documents/workspace/github$ git branch -M main
+drashtam@atyantik-090821:~/Documents/workspace/github$ git branch
+* main
+drashtam@atyantik-090821:~/Documents/workspace/github$ git checkout main
+Already on 'main'
+drashtam@atyantik-090821:~/Documents/workspace/github$ git remote add origin https://github.com/Drashtam/sample.git
+drashtam@atyantik-090821:~/Documents/workspace/github$ git push -u origin main
+Username for 'https://github.com': Drashtam 
+Password for 'https://Drashtam @github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Drashtam/sample.git/'
+drashtam@atyantik-090821:~/Documents/workspace/github$ git push -u origin main
+Username for 'https://github.com': Drashtam
+Password for 'https://Drashtam@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Drashtam/sample.git/'
+drashtam@atyantik-090821:~/Documents/workspace/github$ git remote set-url origin https://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@github.com/Drashtam/sample
+drashtam@atyantik-090821:~/Documents/workspace/github$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 216 bytes | 216.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Drashtam/sample
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
