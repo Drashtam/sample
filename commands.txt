@@ -1,0 +1,33 @@
+- Create new Git project
+- Push the local project to github(main)
+- In local, Create a new branch from main
+- Add new file in local
+- Push that changes to github with new branch
+
+
+
+
+
+
+
+
+
+Git Commands
+===================
+1. git config --global user.email "youremail@yourdomain.com"
+2. git config --global user.name "name"
+3. git init :- it is used to initialize git in a repo.
+4. git add . :- it is used to add files to an repo.
+5. git commit -m "commit" :- it is used to commit files.
+6. git remote add origin <project link> :- it focuses on a repo.
+7. git push -u origin <branch> :- it is used to push code to a repo.
+8. git checkout -b <branchname> :- it creates new branch and switches to that new branch.
+9. git branch <branchname> :- it is used to create new branch without switching on it
+10.git branch -d <branchname> :- it deletes a branch.
+
+Variable cases to name a variable:-
+1. Camel case
+2. Snake case & Capitalized Snake Case
+3. Kebab case
+4. Pascal case
+
