@@ -62,5 +62,5 @@ public class Shape{
 
 Overall :-
 ->   	: Inheritance
-*---> 	: Composition
-----> 	: Dependency 
+*-> 	: Composition
+---> 	: Dependency 
