@@ -1,7 +1,7 @@
 UML (Unified Modeling Language) :- It is used to model systems.
-1.> Every class is denoted in rectangle shape.
+1.> In UML every class is denoted in rectangle shape.
 
-2.> MINUS shows that field or method is PRIVATE, and PLUS shows that field or method is PUBLIC.
+2.> MINUS shows that field or method is PRIVATE, and PLUS shows that field or method is PUBLIC of a class.
 
 Example :- Shape :- - positionX : int
 		  	 		+ render()  : void
