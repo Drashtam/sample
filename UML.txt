@@ -1,0 +1,66 @@
+UML (Unified Modeling Language) :- It is used to model systems.
+1.> Every class is denoted in rectangle shape.
+
+2.> MINUS shows that field or method is PRIVATE, and PLUS shows that field or method is PUBLIC.
+
+Example :- Shape :- - positionX : int
+		  	 		+ render()  : void
+
+Code(Java) :-
+
+public class Shape{
+	private int positionX;
+	public void render(){
+		System.out.println("Hello World");
+	}
+}
+
+
+3.> When an arrow is represented from one class to another class that shows INHERITANCE.
+
+Example :- Shape -> Rectangle
+
+Code(Java) :-
+
+public class Shape{
+	private int positionX;
+	public void render(){
+		System.out.println("Hello World");
+	}
+}
+
+public class Rectange extends Shape{
+	
+}
+
+4.> In a Composition RelationShip a class is composed of another class.
+
+Example :- Shape *-> Size
+
+Code(Java) :-
+
+public class Shape{
+	
+}
+public class Size{
+	Shape shape = new Shape;
+}
+
+5.> In a dependencies relationship it indicates that a class is used as a reference in another class, it could be 		used as a function argument or a local variable used inside a function scope. 
+ 
+Example :- Document ----> Shape
+
+Code(Java) :-
+public class Document{
+	
+}
+public class Shape{
+	public void render(Document document){
+		System.out.println("Hello World");
+	}
+}
+
+Overall :-
+->   	: Inheritance
+*---> 	: Composition
+----> 	: Dependency 
