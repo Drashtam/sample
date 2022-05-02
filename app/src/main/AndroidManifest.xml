@@ -10,17 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMA">
         <activity
-            android:name=".ui.auth.MainActivity2"
-            android:exported="false" />
+            android:name=".ui.auth.ShowListVIew"
+            android:exported="true" >
+
+
+        </activity>
+
         <activity
-            android:name=".ui.auth.MainActivity"
-            android:exported="true">
+            android:name=".ui.auth.ListVIewAndroid"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+        <activity
+            android:name=".ui.auth.MainActivity"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".ui.auth.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".ui.auth.MainActivity0"
+            android:exported="true" />
     </application>
 
 </manifest>
