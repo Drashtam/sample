@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.mvvma.Model6
 import com.example.mvvma.R
+import com.example.mvvma.databinding.ActivityMain2Binding.inflate
 import com.example.mvvma.databinding.ActivityShowListViewBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

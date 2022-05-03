@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.toColorInt
 import androidx.core.view.allViews
 import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
@@ -75,8 +76,8 @@ class ListVIewAndroid : AppCompatActivity() {
 
     }
 
-    fun load_JSON() : String? {
-        var json : String ?= null
+    fun load_JSON(){
+        var json = ""
         try {
             val inputStream: InputStream = assets.open("Sample.json")
 
@@ -86,48 +87,37 @@ class ListVIewAndroid : AppCompatActivity() {
 
             inputStream.close()
 
-            for (i in 0..arrayJSON.length() - 1) {
-
-                val objJSONArray = arrayJSON.getJSONObject(i)
-
-                val hasHMap = HashMap<String, String>()
-
-                hasHMap.put(
-                    objJSONArray.getString("name"),
-                    objJSONArray.getString("email")
-                )
-
-                val STR = arrayOf("First", "Second")
-                val IntArr = arrayOf(R.id.text_1, R.id.text_2)
-                val sampleAdapter: SimpleAdapter =
-                    SimpleAdapter(this, array, R.layout.items, STR, IntArr.toIntArray())
-
-                val aIterator = hasHMap.entries.iterator()
+            val STR = arrayOf("First", "Second")
+            val IntArr = arrayOf(R.id.text_1, R.id.text_2)
+            val sampleAdapter: SimpleAdapter =
+                SimpleAdapter(this, array, R.layout.items, STR, IntArr.toIntArray())
 //
+            for (i in 0 until arrayJSON.length()) {
+
+                val jsonObject = arrayJSON.getJSONObject(i)
+
 //              while (aIterator.hasNext()) {
                 val map = HashMap<String, String>()
-                val pair = aIterator.next()
-                map.put("First", pair.key)
-                map.put("Second", pair.value)
+                map.put("First", jsonObject.getString("name"))
+                map.put("Second", jsonObject.getString("email"))
                 array.add(map)
-
 //                }
-                binding.listview.adapter = sampleAdapter
-                binding.listview.setOnItemClickListener { adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
-                    var showListVIew = ShowListVIew()
-                    val bundle = Bundle()
-                    bundle.putString("Name", array[position]["First"])
-                    bundle.putString("Email", array[position]["Second"])
-                    showListVIew.arguments = bundle
-                    showListVIew.show(supportFragmentManager,"TAG")
-
-                }
+            }
+            binding.listview.adapter = sampleAdapter
+            binding.listview.setOnItemClickListener { adapterView: AdapterView<*>, view: View, position: Int, id: Long ->
+                var showListVIew = ShowListVIew()
+                val bundle = Bundle()
+                bundle.putString("Name", array[position]["First"])
+                bundle.putString("Email", array[position]["Second"])
+                showListVIew.arguments = bundle
+                showListVIew.show(supportFragmentManager,"TAG")
             }
         }
         catch (e : IOException){
             Toast.makeText(applicationContext,e.message,Toast.LENGTH_SHORT).show()
         }
-        return json
     }
+
+
 
 }

@@ -23,5 +23,6 @@
     <style name="AppModelStyle"
         parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/bottom</item>
+<!--        <item name="android:paddingBottom">500dp</item>-->
     </style>
 </resources>
