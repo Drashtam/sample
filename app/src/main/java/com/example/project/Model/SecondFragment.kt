@@ -1,10 +1,11 @@
-package com.example.project
+package com.example.project.Model
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.project.R
 
 class SecondFragment : Fragment() {
 

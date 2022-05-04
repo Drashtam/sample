@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
-            android:name=".MainActivity"
+            android:name=".Model.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +18,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeFragment"
+        <activity android:name=".Model.HomeFragment"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"/>
-        <activity android:name=".FirstFragment"
+        <activity android:name=".Model.FirstFragment"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"/>
-        <activity android:name=".SecondFragment"
+        <activity android:name=".Model.SecondFragment"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"/>
-        <activity android:name=".ThirdFragment"
+        <activity android:name=".Model.ThirdFragment"
             android:exported="true"
             android:theme="@style/Theme.AppCompat"/>
 
