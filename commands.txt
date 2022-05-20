@@ -14,16 +14,18 @@
 
 Git Commands
 ===================
-1. git config --global user.email "youremail@yourdomain.com"
-2. git config --global user.name "name"
-3. git init :- it is used to initialize git in a repo.
-4. git add . :- it is used to add files to an repo.
-5. git commit -m "commit" :- it is used to commit files.
-6. git remote add origin <project link> :- it focuses on a repo.
-7. git push -u origin <branch> :- it is used to push code to a repo.
-8. git checkout -b <branchname> :- it creates new branch and switches to that new branch.
-9. git branch <branchname> :- it is used to create new branch without switching on it
-10.git branch -d <branchname> :- it deletes a branch.
+1.  git config --global user.email "youremail@yourdomain.com"
+2.  git config --global user.name "name"
+3.  git init :- it is used to initialize git in a repo.
+4.  git add . :- it is used to add files to an repo.
+5.  git commit -m "commit" :- it is used to commit files.
+6.  git remote add origin <project link> :- it focuses on a repo.
+7.  git push -u origin <branch> :- it is used to push code to a repo.
+8.  git checkout -b <branchname> :- it creates new branch and switches to that new branch.
+9.  git branch <branchname> :- it is used to create new branch without switching on it
+10. git branch -d <branchname> :- it deletes a branch.
+11. git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git :- it sets a token to repo
+12. git clone https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git :- it sets a token on cloning a repo
 
 Variable cases to name a variable:-
 1. Camel case
