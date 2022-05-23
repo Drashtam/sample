@@ -26,6 +26,8 @@ Git Commands
 10. git branch -d <branchname> :- it deletes a branch.
 11. git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git :- it sets a token to repo
 12. git clone https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git :- it sets a token on cloning a repo
+13. git clone -b development "https://<token>:x-oauth-basic@github.com/<username>/<repo>" :- it clones repo from assigned token 
+
 
 Variable cases to name a variable:-
 1. Camel case
